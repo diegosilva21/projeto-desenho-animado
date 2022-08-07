@@ -1,0 +1,131 @@
+body {
+  font-family: 'Itim',sans-serif;
+  background-image: url(../imagens/fundo-site-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.cabecalho .titulo {
+    color: #2c241e;
+}
+
+.cabecalho .logo {
+    width: 25px;
+    height: 25px;
+}
+
+.desenho-animado-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.lista-desenhos-pokemons {
+    width: 310px;
+    height: 510px;
+    position: relative;
+}
+
+.btn-seta {
+    background-color: rgb(170, 200, 170);
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+    background-color: #9c8ec0;
+}
+
+.cartao {
+    opacity: 0;
+    background-color: blueviolet;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: opacity 0.3s ease-in-out;    
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.fundo-1 {
+    background: url(../imagens/fundo-1.jpg) no-repeat;
+}
+
+.fundo-2 {
+    background: url(../imagens/fundo-2.jpg) no-repeat;
+}
+
+.fundo-3 {
+    background: url(../imagens/fundo-3.png) no-repeat;
+}
+
+.cartao .informacoes {
+    
+    display: flex;
+    justify-content: center;  
+}
+
+.cartao .informacoes .nome {
+    color: #0a031d;
+}
+
+.cartao .container-imagem {
+    text-align: center;
+}
+
+.cartao .imagem-desenho-animado {
+    max-width: 100%;
+    max-height: 280px;
+    padding: 10px;
+}
+
+.cartao .descricao {
+    background: rgba(217, 204, 204, 0.8);
+}
+
+.cartao .descricao .titulo {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 8px;
+}
+
+.cartao .descricao .texto {
+    text-align: justify;
+    max-height: 115px;
+    overflow-y: auto;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+}
